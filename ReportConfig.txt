@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ReportingConfig>
+  <DPKTranHistoryReports>
+    <DPKTranHistoryReport>
+      <ReportName>LKM_To_Glovia</ReportName>
+	  <KeyCharsInFileName>LKM_TO_GLOVIA</KeyCharsInFileName>
+      <TargetTableName>LKM_To_Glovia_Trans_History</TargetTableName>
+	  <FieldNameList>#LKM_CCN,LKM_PN,LKM_DPK_SN,LKM_FROM_STATUS,LKM_TO_STATUS,LKM_CHANGE_DATE_AUS,LKM_TO_FACILITY,LKM_KEY_TYPE,LKM_MSG_ID,GLV_REF_NO,LKM_TRANS_TYPE,GLV_TRANS_DATE_AUS,GLV_FROM_ML,GLV_FROM_SR,GLV_TO_ML,GLV_TO_SR</FieldNameList>
+      <SourceFolder>\\Ausdsnas03.aus.amer.dell.com\GLOBAL_IC_DPK$\Traceability_Reporting</SourceFolder>
+      <DayOfWeek>0,1,2,3,4,5,6</DayOfWeek>
+      <StartTime>090000</StartTime>
+    </DPKTranHistoryReport>
+	  <DPKTranHistoryReport>
+      <ReportName>Glovia_To_LKM</ReportName>
+	  <KeyCharsInFileName>GLOVIA_TO_LKM</KeyCharsInFileName>
+      <TargetTableName>Glovia_To_LKM_Trans_History</TargetTableName>
+	  <FieldNameList>#GLV_CCN,GLV_PN,GLV_DPK_SN,GLV_REF_NO,LKM_TRANS_TYPE,GLV_TRANS_DATE_AUS,GLV_FROM_ML,GLV_FROM_SR,GLV_TO_ML,GLV_TO_SR,LKM_FROM_STATUS,LKM_TO_STATUS,LKM_UPDATE_DATE_AUS,LKM_TO_FACILITY,LKM_KEY_TYPE,GLV_MSG_ID</FieldNameList>
+      <SourceFolder>\\Ausdsnas03.aus.amer.dell.com\GLOBAL_IC_DPK$\Traceability_Reporting</SourceFolder>
+      <DayOfWeek>0,1,2,3,4,5,6</DayOfWeek>
+      <StartTime>090000</StartTime>
+    </DPKTranHistoryReport>
+	  <DPKTranHistoryReport>
+      <ReportName>Glovia_To_LKM_Exception</ReportName>
+	  <KeyCharsInFileName>GLOVIA_TO_LKM</KeyCharsInFileName>
+      <TargetTableName>Glovia_To_LKM_Exception_Trans_History</TargetTableName>
+	  <FieldNameList>#GLV_CCN,GLV_PN,GLV_DPK_SN,GLV_REF_NO,LKM_TRANS_TYPE,GLV_TRANS_DATE_AUS,GLV_FROM_ML,GLV_FROM_SR,GLV_TO_ML,GLV_TO_SR,LKM_FROM_STATUS,LKM_TO_STATUS,LKM_UPDATE_DATE_AUS,LKM_TO_FACILITY,LKM_KEY_TYPE,GLV_MSG_ID</FieldNameList>
+      <SourceFolder>\\Ausdsnas03.aus.amer.dell.com\GLOBAL_IC_DPK$\Traceability_Reporting</SourceFolder>
+      <DayOfWeek>0,1,2,3,4,5,6</DayOfWeek>
+      <StartTime>090000</StartTime>
+    </DPKTranHistoryReport>
+  </DPKTranHistoryReports>
+</ReportingConfig>

@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Transaction History";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="contact">
+    <div class="fields">
+    <ul>
+        <li>@Html.Label("CCN:");
+        @Html.DropDownList("ccnlist");
+        </li>
+    </ul>
+
+    <ul>
+        <li><label>Serial Key Number：</label>
+	    <input type="text" name="SerialKeyNumber" tabindex="2"/></li>
+    </ul>
+
+    <ul>
+        <li><label>Part Number：</label>
+	    <input type="text" name="PartNumber" tabindex="3"/></li>
+    </ul>
+
+    <ul>
+        <li><label>LKM From Status：</label>
+	    <select name="lkmfromstatus" class="default" tabindex="4">
+		        <option value="ALLOCATED">ALLOCATED</option>
+                <option value="BOUND">BOUND</option>
+		        <option value="PEND2BURN">PEND2BURN</option>
+		        <option value="PO_SWAP">PO_SWAP</option>
+		        <option value="PRE_ALLOCATED">PRE_ALLOCATED</option>
+		        <option value="STAGED_TO_RETURN">STAGED_TO_RETURN</option>
+		        <option value="STAGED_TO_UNALLOCATED">STAGED_TO_UNALLOCATED</option>
+		        <option value="UNALLOCATED">UNALLOCATED</option>
+	        </select>
+        </li>
+    </ul>
+
+    <ul>
+    <li><label>LKM To Status：</label>
+    <select name="lkmtostatus" class="default" tabindex="5">
+		    <option value="ALLOCATED">ALLOCATED</option>
+            <option value="ASSOCIATED">ASSOCIATED</option>
+		    <option value="BOUND">BOUND</option>
+		    <option value="PO_SWAP">PO_SWAP</option>
+		    <option value="STAGED_TO_RETURN">STAGED_TO_RETURN</option>
+		    <option value="UNALLOCATED">UNALLOCATED</option>
+	    </select>
+    </li>
+    </ul>
+
+    <ul>
+        <li><label>From Date：</label>
+        <input type="text" name="fromdate" tabindex="6"/></li>
+    </ul>
+
+    <ul>
+        <li><label>To Date：</label>
+        <input type="text" name="todate" tabindex="6"/></li>
+    </ul>
+
+    <input type="submit" value="Run" tabindex="7"/>
+
+    </div>
+    </div>
+}

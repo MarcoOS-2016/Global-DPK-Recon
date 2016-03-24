@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReportingConfig>
+  <DPKTranHistoryReports>
+    <DPKTranHistoryReport>
+      <ReportName>LKM_To_Glovia</ReportName>
+	    <KeyCharsInFileName>LKM_TO_GLOVIA-</KeyCharsInFileName>
+      <TargetTableName>LKM_TO_GLOVIA_TRANSACTION</TargetTableName>
+      <SourceFolder>\\Ausdsnas03.aus.amer.dell.com\GLOBAL_IC_DPK$\Traceability_Reporting</SourceFolder>
+      <DayOfWeek>0,1,2,3,4,5,6</DayOfWeek>
+      <StartTime>090000</StartTime>
+    </DPKTranHistoryReport>
+	  <DPKTranHistoryReport>
+      <ReportName>Glovia_To_LKM</ReportName>
+	    <KeyCharsInFileName>GLOVIA_TO_LKM-</KeyCharsInFileName>
+      <TargetTableName>GLOVIA_TO_LKM_TRANSACTION</TargetTableName>
+      <SourceFolder>\\Ausdsnas03.aus.amer.dell.com\GLOBAL_IC_DPK$\Traceability_Reporting</SourceFolder>
+      <DayOfWeek>0,1,2,3,4,5,6</DayOfWeek>
+      <StartTime>090000</StartTime>
+    </DPKTranHistoryReport>
+	  <DPKTranHistoryReport>
+      <ReportName>Glovia_To_LKM_Exception</ReportName>
+	    <KeyCharsInFileName>GLOVIA_TO_LKM_EXCPTN</KeyCharsInFileName>
+      <TargetTableName>GLOVIA_TO_LKM_TRANSACTION</TargetTableName>
+      <SourceFolder>\\Ausdsnas03.aus.amer.dell.com\GLOBAL_IC_DPK$\Traceability_Reporting</SourceFolder>
+      <DayOfWeek>0,1,2,3,4,5,6</DayOfWeek>
+      <StartTime>090000</StartTime>
+    </DPKTranHistoryReport>
+  </DPKTranHistoryReports>
+</ReportingConfig>

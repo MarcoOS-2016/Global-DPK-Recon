@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Global_DPK_ReconModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="Global_DPK_ReconModelStoreContainer">
+          <EntitySet Name="GLOVIA_EXCEPTION_TRANSACTION" EntityType="Global_DPK_ReconModel.Store.GLOVIA_EXCEPTION_TRANSACTION" store:Type="Tables" store:Schema="dbo" store:Name="GLOVIA_EXCEPTION_TRANSACTION">
+            <DefiningQuery>SELECT 
+      [GLOVIA_EXCEPTION_TRANSACTION].[GLV_CCN] AS [GLV_CCN], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[GLV_PN] AS [GLV_PN], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[GLV_DPK_SN] AS [GLV_DPK_SN], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[GLV_REF_NO] AS [GLV_REF_NO], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[LKM_TRANS_TYPE] AS [LKM_TRANS_TYPE], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[GLV_TRANS_DATE_AUS] AS [GLV_TRANS_DATE_AUS], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[GLV_TRANS_DATE_REG] AS [GLV_TRANS_DATE_REG], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[GLV_FROM_ML] AS [GLV_FROM_ML], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[GLV_FROM_SR] AS [GLV_FROM_SR], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[GLV_TO_ML] AS [GLV_TO_ML], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[GLV_TO_SR] AS [GLV_TO_SR], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[LKM_FROM_STATUS] AS [LKM_FROM_STATUS], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[LKM_TO_STATUS] AS [LKM_TO_STATUS], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[LKM_UPDATE_DATE_AUS] AS [LKM_UPDATE_DATE_AUS], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[LKM_UPDATE_DATE_REG] AS [LKM_UPDATE_DATE_REG], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[LKM_TO_FACILITY] AS [LKM_TO_FACILITY], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[LKM_KEY_TYPE] AS [LKM_KEY_TYPE], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[GLV_MSG_ID] AS [GLV_MSG_ID], 
+      [GLOVIA_EXCEPTION_TRANSACTION].[SNAP_SHOT_DATE] AS [SNAP_SHOT_DATE]
+      FROM [dbo].[GLOVIA_EXCEPTION_TRANSACTION] AS [GLOVIA_EXCEPTION_TRANSACTION]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="GLOVIA_TO_LKM_TRANSACTION" EntityType="Global_DPK_ReconModel.Store.GLOVIA_TO_LKM_TRANSACTION" store:Type="Tables" store:Schema="dbo" store:Name="GLOVIA_TO_LKM_TRANSACTION">
+            <DefiningQuery>SELECT 
+      [GLOVIA_TO_LKM_TRANSACTION].[GLV_CCN] AS [GLV_CCN], 
+      [GLOVIA_TO_LKM_TRANSACTION].[GLV_PN] AS [GLV_PN], 
+      [GLOVIA_TO_LKM_TRANSACTION].[GLV_DPK_SN] AS [GLV_DPK_SN], 
+      [GLOVIA_TO_LKM_TRANSACTION].[GLV_REF_NO] AS [GLV_REF_NO], 
+      [GLOVIA_TO_LKM_TRANSACTION].[LKM_TRANS_TYPE] AS [LKM_TRANS_TYPE], 
+      [GLOVIA_TO_LKM_TRANSACTION].[GLV_TRANS_DATE_AUS] AS [GLV_TRANS_DATE_AUS], 
+      [GLOVIA_TO_LKM_TRANSACTION].[GLV_TRANS_DATE_REG] AS [GLV_TRANS_DATE_REG], 
+      [GLOVIA_TO_LKM_TRANSACTION].[GLV_FROM_ML] AS [GLV_FROM_ML], 
+      [GLOVIA_TO_LKM_TRANSACTION].[GLV_FROM_SR] AS [GLV_FROM_SR], 
+      [GLOVIA_TO_LKM_TRANSACTION].[GLV_TO_ML] AS [GLV_TO_ML], 
+      [GLOVIA_TO_LKM_TRANSACTION].[GLV_TO_SR] AS [GLV_TO_SR], 
+      [GLOVIA_TO_LKM_TRANSACTION].[LKM_FROM_STATUS] AS [LKM_FROM_STATUS], 
+      [GLOVIA_TO_LKM_TRANSACTION].[LKM_TO_STATUS] AS [LKM_TO_STATUS], 
+      [GLOVIA_TO_LKM_TRANSACTION].[LKM_UPDATE_DATE_AUS] AS [LKM_UPDATE_DATE_AUS], 
+      [GLOVIA_TO_LKM_TRANSACTION].[LKM_UPDATE_DATE_REG] AS [LKM_UPDATE_DATE_REG], 
+      [GLOVIA_TO_LKM_TRANSACTION].[LKM_TO_FACILITY] AS [LKM_TO_FACILITY], 
+      [GLOVIA_TO_LKM_TRANSACTION].[LKM_KEY_TYPE] AS [LKM_KEY_TYPE], 
+      [GLOVIA_TO_LKM_TRANSACTION].[GLV_MSG_ID] AS [GLV_MSG_ID], 
+      [GLOVIA_TO_LKM_TRANSACTION].[SNAP_SHOT_DATE] AS [SNAP_SHOT_DATE]
+      FROM [dbo].[GLOVIA_TO_LKM_TRANSACTION] AS [GLOVIA_TO_LKM_TRANSACTION]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="LKM_TO_GLOVIA_TRANSACTION" EntityType="Global_DPK_ReconModel.Store.LKM_TO_GLOVIA_TRANSACTION" store:Type="Tables" store:Schema="dbo" store:Name="LKM_TO_GLOVIA_TRANSACTION">
+            <DefiningQuery>SELECT 
+      [LKM_TO_GLOVIA_TRANSACTION].[LKM_CCN] AS [LKM_CCN], 
+      [LKM_TO_GLOVIA_TRANSACTION].[LKM_PN] AS [LKM_PN], 
+      [LKM_TO_GLOVIA_TRANSACTION].[LKM_DPK_SN] AS [LKM_DPK_SN], 
+      [LKM_TO_GLOVIA_TRANSACTION].[LKM_FROM_STATUS] AS [LKM_FROM_STATUS], 
+      [LKM_TO_GLOVIA_TRANSACTION].[LKM_TO_STATUS] AS [LKM_TO_STATUS], 
+      [LKM_TO_GLOVIA_TRANSACTION].[LKM_CHANGE_DATE_AUS] AS [LKM_CHANGE_DATE_AUS], 
+      [LKM_TO_GLOVIA_TRANSACTION].[LKM_CHANGE_DATE_REG] AS [LKM_CHANGE_DATE_REG], 
+      [LKM_TO_GLOVIA_TRANSACTION].[LKM_TO_FACILITY] AS [LKM_TO_FACILITY], 
+      [LKM_TO_GLOVIA_TRANSACTION].[LKM_KEY_TYPE] AS [LKM_KEY_TYPE], 
+      [LKM_TO_GLOVIA_TRANSACTION].[LKM_MSG_ID] AS [LKM_MSG_ID], 
+      [LKM_TO_GLOVIA_TRANSACTION].[GLV_REF_NO] AS [GLV_REF_NO], 
+      [LKM_TO_GLOVIA_TRANSACTION].[LKM_TRANS_TYPE] AS [LKM_TRANS_TYPE], 
+      [LKM_TO_GLOVIA_TRANSACTION].[GLV_TRANS_DATE_AUS] AS [GLV_TRANS_DATE_AUS], 
+      [LKM_TO_GLOVIA_TRANSACTION].[GLV_TRANS_DATE_REG] AS [GLV_TRANS_DATE_REG], 
+      [LKM_TO_GLOVIA_TRANSACTION].[GLV_FROM_ML] AS [GLV_FROM_ML], 
+      [LKM_TO_GLOVIA_TRANSACTION].[GLV_FROM_SR] AS [GLV_FROM_SR], 
+      [LKM_TO_GLOVIA_TRANSACTION].[GLV_TO_ML] AS [GLV_TO_ML], 
+      [LKM_TO_GLOVIA_TRANSACTION].[GLV_TO_SR] AS [GLV_TO_SR], 
+      [LKM_TO_GLOVIA_TRANSACTION].[SNAP_SHOT_DATE] AS [SNAP_SHOT_DATE]
+      FROM [dbo].[LKM_TO_GLOVIA_TRANSACTION] AS [LKM_TO_GLOVIA_TRANSACTION]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Report_Uploading_Log" EntityType="Global_DPK_ReconModel.Store.Report_Uploading_Log" store:Type="Tables" store:Schema="dbo" store:Name="Report_Uploading_Log">
+            <DefiningQuery>SELECT 
+      [Report_Uploading_Log].[ReportName] AS [ReportName], 
+      [Report_Uploading_Log].[FileName] AS [FileName], 
+      [Report_Uploading_Log].[StartTime] AS [StartTime], 
+      [Report_Uploading_Log].[EndTime] AS [EndTime], 
+      [Report_Uploading_Log].[TotalRecordNumber] AS [TotalRecordNumber], 
+      [Report_Uploading_Log].[CreatedDate] AS [CreatedDate]
+      FROM [dbo].[Report_Uploading_Log] AS [Report_Uploading_Log]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="User" EntityType="Global_DPK_ReconModel.Store.User" store:Type="Tables" store:Schema="dbo" store:Name="User">
+            <DefiningQuery>SELECT 
+      [User].[Id] AS [Id], 
+      [User].[Region] AS [Region], 
+      [User].[UserName] AS [UserName], 
+      [User].[MailAddress] AS [MailAddress], 
+      [User].[Role] AS [Role], 
+      [User].[CreatedDate] AS [CreatedDate]
+      FROM [dbo].[User] AS [User]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Variance_History" EntityType="Global_DPK_ReconModel.Store.Variance_History" store:Type="Tables" store:Schema="dbo" store:Name="Variance_History">
+            <DefiningQuery>SELECT 
+      [Variance_History].[SOURCE] AS [SOURCE], 
+      [Variance_History].[LKM_CCN] AS [LKM_CCN], 
+      [Variance_History].[LKM_PN] AS [LKM_PN], 
+      [Variance_History].[LKM_DPK_SN] AS [LKM_DPK_SN], 
+      [Variance_History].[LKM_FROM_STATUS] AS [LKM_FROM_STATUS], 
+      [Variance_History].[LKM_TO_STATUS] AS [LKM_TO_STATUS], 
+      [Variance_History].[LKM_MSG_ID] AS [LKM_MSG_ID]
+      FROM [dbo].[Variance_History] AS [Variance_History]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_Variance_Items" EntityType="Global_DPK_ReconModel.Store.View_Variance_Items" store:Type="Views" store:Schema="dbo" store:Name="View_Variance_Items">
+            <DefiningQuery>SELECT 
+      [View_Variance_Items].[SOURCE] AS [SOURCE], 
+      [View_Variance_Items].[LKM_CCN] AS [LKM_CCN], 
+      [View_Variance_Items].[LKM_PN] AS [LKM_PN], 
+      [View_Variance_Items].[LKM_DPK_SN] AS [LKM_DPK_SN], 
+      [View_Variance_Items].[GLV_REF_NO] AS [GLV_REF_NO], 
+      [View_Variance_Items].[LKM_TRANS_TYPE] AS [LKM_TRANS_TYPE], 
+      [View_Variance_Items].[GLV_TRANS_DATE_AUS] AS [GLV_TRANS_DATE_AUS], 
+      [View_Variance_Items].[GLV_TRANS_DATE_REG] AS [GLV_TRANS_DATE_REG], 
+      [View_Variance_Items].[GLV_FROM_ML] AS [GLV_FROM_ML], 
+      [View_Variance_Items].[GLV_FROM_SR] AS [GLV_FROM_SR], 
+      [View_Variance_Items].[GLV_TO_ML] AS [GLV_TO_ML], 
+      [View_Variance_Items].[GLV_TO_SR] AS [GLV_TO_SR], 
+      [View_Variance_Items].[LKM_FROM_STATUS] AS [LKM_FROM_STATUS], 
+      [View_Variance_Items].[LKM_TO_STATUS] AS [LKM_TO_STATUS], 
+      [View_Variance_Items].[LKM_CHANGE_DATE_AUS] AS [LKM_CHANGE_DATE_AUS], 
+      [View_Variance_Items].[LKM_CHANGE_DATE_REG] AS [LKM_CHANGE_DATE_REG], 
+      [View_Variance_Items].[LKM_TO_FACILITY] AS [LKM_TO_FACILITY], 
+      [View_Variance_Items].[LKM_KEY_TYPE] AS [LKM_KEY_TYPE], 
+      [View_Variance_Items].[LKM_MSG_ID] AS [LKM_MSG_ID], 
+      [View_Variance_Items].[SNAP_SHOT_DATE] AS [SNAP_SHOT_DATE]
+      FROM [dbo].[View_Variance_Items] AS [View_Variance_Items]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Global_DPK_Recon.dbo.GLOVIA_EXCEPTION_TRANSACTION' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="GLOVIA_EXCEPTION_TRANSACTION">
+          <Key>
+            <PropertyRef Name="GLV_CCN" />
+            <PropertyRef Name="GLV_PN" />
+            <PropertyRef Name="GLV_DPK_SN" />
+            <PropertyRef Name="LKM_FROM_STATUS" />
+            <PropertyRef Name="LKM_TO_STATUS" />
+            <PropertyRef Name="GLV_MSG_ID" />
+          </Key>
+          <Property Name="GLV_CCN" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="GLV_PN" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="GLV_DPK_SN" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="GLV_REF_NO" Type="varchar" MaxLength="10" />
+          <Property Name="LKM_TRANS_TYPE" Type="varchar" MaxLength="5" />
+          <Property Name="GLV_TRANS_DATE_AUS" Type="datetime" />
+          <Property Name="GLV_TRANS_DATE_REG" Type="datetime" />
+          <Property Name="GLV_FROM_ML" Type="varchar" MaxLength="5" />
+          <Property Name="GLV_FROM_SR" Type="varchar" MaxLength="10" />
+          <Property Name="GLV_TO_ML" Type="varchar" MaxLength="5" />
+          <Property Name="GLV_TO_SR" Type="varchar" MaxLength="10" />
+          <Property Name="LKM_FROM_STATUS" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="LKM_TO_STATUS" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="LKM_UPDATE_DATE_AUS" Type="datetime" />
+          <Property Name="LKM_UPDATE_DATE_REG" Type="datetime" />
+          <Property Name="LKM_TO_FACILITY" Type="varchar" MaxLength="15" />
+          <Property Name="LKM_KEY_TYPE" Type="varchar" MaxLength="15" />
+          <Property Name="GLV_MSG_ID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="SNAP_SHOT_DATE" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Global_DPK_Recon.dbo.GLOVIA_TO_LKM_TRANSACTION' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="GLOVIA_TO_LKM_TRANSACTION">
+          <Key>
+            <PropertyRef Name="GLV_CCN" />
+            <PropertyRef Name="GLV_PN" />
+            <PropertyRef Name="GLV_DPK_SN" />
+            <PropertyRef Name="LKM_FROM_STATUS" />
+            <PropertyRef Name="LKM_TO_STATUS" />
+            <PropertyRef Name="GLV_MSG_ID" />
+          </Key>
+          <Property Name="GLV_CCN" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="GLV_PN" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="GLV_DPK_SN" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="GLV_REF_NO" Type="varchar" MaxLength="10" />
+          <Property Name="LKM_TRANS_TYPE" Type="varchar" MaxLength="5" />
+          <Property Name="GLV_TRANS_DATE_AUS" Type="datetime" />
+          <Property Name="GLV_TRANS_DATE_REG" Type="datetime" />
+          <Property Name="GLV_FROM_ML" Type="varchar" MaxLength="5" />
+          <Property Name="GLV_FROM_SR" Type="varchar" MaxLength="10" />
+          <Property Name="GLV_TO_ML" Type="varchar" MaxLength="5" />
+          <Property Name="GLV_TO_SR" Type="varchar" MaxLength="10" />
+          <Property Name="LKM_FROM_STATUS" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="LKM_TO_STATUS" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="LKM_UPDATE_DATE_AUS" Type="datetime" />
+          <Property Name="LKM_UPDATE_DATE_REG" Type="datetime" />
+          <Property Name="LKM_TO_FACILITY" Type="varchar" MaxLength="15" />
+          <Property Name="LKM_KEY_TYPE" Type="varchar" MaxLength="15" />
+          <Property Name="GLV_MSG_ID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="SNAP_SHOT_DATE" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Global_DPK_Recon.dbo.LKM_TO_GLOVIA_TRANSACTION' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="LKM_TO_GLOVIA_TRANSACTION">
+          <Key>
+            <PropertyRef Name="LKM_CCN" />
+            <PropertyRef Name="LKM_PN" />
+            <PropertyRef Name="LKM_DPK_SN" />
+            <PropertyRef Name="LKM_FROM_STATUS" />
+            <PropertyRef Name="LKM_TO_STATUS" />
+            <PropertyRef Name="LKM_MSG_ID" />
+          </Key>
+          <Property Name="LKM_CCN" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="LKM_PN" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="LKM_DPK_SN" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="LKM_FROM_STATUS" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="LKM_TO_STATUS" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="LKM_CHANGE_DATE_AUS" Type="datetime" />
+          <Property Name="LKM_CHANGE_DATE_REG" Type="datetime" />
+          <Property Name="LKM_TO_FACILITY" Type="varchar" MaxLength="15" />
+          <Property Name="LKM_KEY_TYPE" Type="varchar" MaxLength="11" />
+          <Property Name="LKM_MSG_ID" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="GLV_REF_NO" Type="varchar" MaxLength="10" />
+          <Property Name="LKM_TRANS_TYPE" Type="varchar" MaxLength="5" />
+          <Property Name="GLV_TRANS_DATE_AUS" Type="datetime" />
+          <Property Name="GLV_TRANS_DATE_REG" Type="datetime" />
+          <Property Name="GLV_FROM_ML" Type="varchar" MaxLength="5" />
+          <Property Name="GLV_FROM_SR" Type="varchar" MaxLength="10" />
+          <Property Name="GLV_TO_ML" Type="varchar" MaxLength="5" />
+          <Property Name="GLV_TO_SR" Type="varchar" MaxLength="10" />
+          <Property Name="SNAP_SHOT_DATE" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Global_DPK_Recon.dbo.Report_Uploading_Log' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Report_Uploading_Log">
+          <Key>
+            <PropertyRef Name="ReportName" />
+            <PropertyRef Name="FileName" />
+            <PropertyRef Name="StartTime" />
+            <PropertyRef Name="EndTime" />
+            <PropertyRef Name="TotalRecordNumber" />
+            <PropertyRef Name="CreatedDate" />
+          </Key>
+          <Property Name="ReportName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="FileName" Type="varchar" Nullable="false" MaxLength="80" />
+          <Property Name="StartTime" Type="datetime" Nullable="false" />
+          <Property Name="EndTime" Type="datetime" Nullable="false" />
+          <Property Name="TotalRecordNumber" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Global_DPK_Recon.dbo.User' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Region" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="MailAddress" />
+            <PropertyRef Name="Role" />
+            <PropertyRef Name="CreatedDate" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Region" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="MailAddress" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Role" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Global_DPK_Recon.dbo.Variance_History' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Variance_History">
+          <Key>
+            <PropertyRef Name="SOURCE" />
+            <PropertyRef Name="LKM_CCN" />
+            <PropertyRef Name="LKM_PN" />
+            <PropertyRef Name="LKM_DPK_SN" />
+            <PropertyRef Name="LKM_FROM_STATUS" />
+            <PropertyRef Name="LKM_TO_STATUS" />
+            <PropertyRef Name="LKM_MSG_ID" />
+          </Key>
+          <Property Name="SOURCE" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="LKM_CCN" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="LKM_PN" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="LKM_DPK_SN" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="LKM_FROM_STATUS" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="LKM_TO_STATUS" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="LKM_MSG_ID" Type="varchar" Nullable="false" MaxLength="45" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Global_DPK_Recon.dbo.View_Variance_Items' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="View_Variance_Items">
+          <Key>
+            <PropertyRef Name="SOURCE" />
+            <PropertyRef Name="LKM_CCN" />
+            <PropertyRef Name="LKM_PN" />
+            <PropertyRef Name="LKM_DPK_SN" />
+            <PropertyRef Name="LKM_FROM_STATUS" />
+            <PropertyRef Name="LKM_TO_STATUS" />
+            <PropertyRef Name="LKM_MSG_ID" />
+          </Key>
+          <Property Name="SOURCE" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="LKM_CCN" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="LKM_PN" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="LKM_DPK_SN" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="GLV_REF_NO" Type="varchar" MaxLength="10" />
+          <Property Name="LKM_TRANS_TYPE" Type="varchar" MaxLength="5" />
+          <Property Name="GLV_TRANS_DATE_AUS" Type="datetime" />
+          <Property Name="GLV_TRANS_DATE_REG" Type="datetime" />
+          <Property Name="GLV_FROM_ML" Type="varchar" MaxLength="5" />
+          <Property Name="GLV_FROM_SR" Type="varchar" MaxLength="10" />
+          <Property Name="GLV_TO_ML" Type="varchar" MaxLength="5" />
+          <Property Name="GLV_TO_SR" Type="varchar" MaxLength="10" />
+          <Property Name="LKM_FROM_STATUS" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="LKM_TO_STATUS" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="LKM_CHANGE_DATE_AUS" Type="datetime" />
+          <Property Name="LKM_CHANGE_DATE_REG" Type="datetime" />
+          <Property Name="LKM_TO_FACILITY" Type="varchar" MaxLength="15" />
+          <Property Name="LKM_KEY_TYPE" Type="varchar" MaxLength="11" />
+          <Property Name="LKM_MSG_ID" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="SNAP_SHOT_DATE" Type="datetime" />
+        </EntityType>
+        <Function Name="Insert_Report_Uploading_Log" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ReportName" Type="varchar" Mode="In" />
+          <Parameter Name="FileName" Type="varchar" Mode="In" />
+          <Parameter Name="StartTime" Type="datetime" Mode="In" />
+          <Parameter Name="EndTime" Type="datetime" Mode="In" />
+          <Parameter Name="TotalRecordNumber" Type="int" Mode="In" />
+          <Parameter Name="CreatedDate" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="Insert_Variance_Item" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Remove_Historical_Data" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Global_DPK_ReconModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="Global_DPK_ReconEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="GLOVIA_EXCEPTION_TRANSACTION" EntityType="Global_DPK_ReconModel.GLOVIA_EXCEPTION_TRANSACTION" />
+          <EntitySet Name="GLOVIA_TO_LKM_TRANSACTION" EntityType="Global_DPK_ReconModel.GLOVIA_TO_LKM_TRANSACTION" />
+          <EntitySet Name="LKM_TO_GLOVIA_TRANSACTION" EntityType="Global_DPK_ReconModel.LKM_TO_GLOVIA_TRANSACTION" />
+          <EntitySet Name="Report_Uploading_Log" EntityType="Global_DPK_ReconModel.Report_Uploading_Log" />
+          <EntitySet Name="User" EntityType="Global_DPK_ReconModel.User" />
+          <EntitySet Name="Variance_History" EntityType="Global_DPK_ReconModel.Variance_History" />
+          <EntitySet Name="View_Variance_Items" EntityType="Global_DPK_ReconModel.View_Variance_Items" />
+        </EntityContainer>
+        <EntityType Name="GLOVIA_EXCEPTION_TRANSACTION">
+          <Key>
+            <PropertyRef Name="GLV_CCN" />
+            <PropertyRef Name="GLV_PN" />
+            <PropertyRef Name="GLV_DPK_SN" />
+            <PropertyRef Name="LKM_FROM_STATUS" />
+            <PropertyRef Name="LKM_TO_STATUS" />
+            <PropertyRef Name="GLV_MSG_ID" />
+          </Key>
+          <Property Name="GLV_CCN" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_PN" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_DPK_SN" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_REF_NO" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_TRANS_TYPE" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_TRANS_DATE_AUS" Type="DateTime" />
+          <Property Name="GLV_TRANS_DATE_REG" Type="DateTime" />
+          <Property Name="GLV_FROM_ML" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_FROM_SR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_TO_ML" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_TO_SR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_FROM_STATUS" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_TO_STATUS" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_UPDATE_DATE_AUS" Type="DateTime" />
+          <Property Name="LKM_UPDATE_DATE_REG" Type="DateTime" />
+          <Property Name="LKM_TO_FACILITY" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_KEY_TYPE" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_MSG_ID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SNAP_SHOT_DATE" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="GLOVIA_TO_LKM_TRANSACTION">
+          <Key>
+            <PropertyRef Name="GLV_CCN" />
+            <PropertyRef Name="GLV_PN" />
+            <PropertyRef Name="GLV_DPK_SN" />
+            <PropertyRef Name="LKM_FROM_STATUS" />
+            <PropertyRef Name="LKM_TO_STATUS" />
+            <PropertyRef Name="GLV_MSG_ID" />
+          </Key>
+          <Property Name="GLV_CCN" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_PN" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_DPK_SN" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_REF_NO" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_TRANS_TYPE" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_TRANS_DATE_AUS" Type="DateTime" />
+          <Property Name="GLV_TRANS_DATE_REG" Type="DateTime" />
+          <Property Name="GLV_FROM_ML" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_FROM_SR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_TO_ML" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_TO_SR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_FROM_STATUS" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_TO_STATUS" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_UPDATE_DATE_AUS" Type="DateTime" />
+          <Property Name="LKM_UPDATE_DATE_REG" Type="DateTime" />
+          <Property Name="LKM_TO_FACILITY" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_KEY_TYPE" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_MSG_ID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SNAP_SHOT_DATE" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="LKM_TO_GLOVIA_TRANSACTION">
+          <Key>
+            <PropertyRef Name="LKM_CCN" />
+            <PropertyRef Name="LKM_PN" />
+            <PropertyRef Name="LKM_DPK_SN" />
+            <PropertyRef Name="LKM_FROM_STATUS" />
+            <PropertyRef Name="LKM_TO_STATUS" />
+            <PropertyRef Name="LKM_MSG_ID" />
+          </Key>
+          <Property Name="LKM_CCN" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_PN" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_DPK_SN" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_FROM_STATUS" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_TO_STATUS" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_CHANGE_DATE_AUS" Type="DateTime" />
+          <Property Name="LKM_CHANGE_DATE_REG" Type="DateTime" />
+          <Property Name="LKM_TO_FACILITY" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_KEY_TYPE" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_MSG_ID" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_REF_NO" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_TRANS_TYPE" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_TRANS_DATE_AUS" Type="DateTime" />
+          <Property Name="GLV_TRANS_DATE_REG" Type="DateTime" />
+          <Property Name="GLV_FROM_ML" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_FROM_SR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_TO_ML" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_TO_SR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="SNAP_SHOT_DATE" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="Report_Uploading_Log">
+          <Key>
+            <PropertyRef Name="ReportName" />
+            <PropertyRef Name="FileName" />
+            <PropertyRef Name="StartTime" />
+            <PropertyRef Name="EndTime" />
+            <PropertyRef Name="TotalRecordNumber" />
+            <PropertyRef Name="CreatedDate" />
+          </Key>
+          <Property Name="ReportName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FileName" Type="String" Nullable="false" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="StartTime" Type="DateTime" Nullable="false" />
+          <Property Name="EndTime" Type="DateTime" Nullable="false" />
+          <Property Name="TotalRecordNumber" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Region" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="MailAddress" />
+            <PropertyRef Name="Role" />
+            <PropertyRef Name="CreatedDate" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Region" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MailAddress" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Role" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Variance_History">
+          <Key>
+            <PropertyRef Name="SOURCE" />
+            <PropertyRef Name="LKM_CCN" />
+            <PropertyRef Name="LKM_PN" />
+            <PropertyRef Name="LKM_DPK_SN" />
+            <PropertyRef Name="LKM_FROM_STATUS" />
+            <PropertyRef Name="LKM_TO_STATUS" />
+            <PropertyRef Name="LKM_MSG_ID" />
+          </Key>
+          <Property Name="SOURCE" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_CCN" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_PN" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_DPK_SN" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_FROM_STATUS" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_TO_STATUS" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_MSG_ID" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="View_Variance_Items">
+          <Key>
+            <PropertyRef Name="SOURCE" />
+            <PropertyRef Name="LKM_CCN" />
+            <PropertyRef Name="LKM_PN" />
+            <PropertyRef Name="LKM_DPK_SN" />
+            <PropertyRef Name="LKM_FROM_STATUS" />
+            <PropertyRef Name="LKM_TO_STATUS" />
+            <PropertyRef Name="LKM_MSG_ID" />
+          </Key>
+          <Property Name="SOURCE" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_CCN" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_PN" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_DPK_SN" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_REF_NO" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_TRANS_TYPE" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_TRANS_DATE_AUS" Type="DateTime" />
+          <Property Name="GLV_TRANS_DATE_REG" Type="DateTime" />
+          <Property Name="GLV_FROM_ML" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_FROM_SR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_TO_ML" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="GLV_TO_SR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_FROM_STATUS" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_TO_STATUS" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_CHANGE_DATE_AUS" Type="DateTime" />
+          <Property Name="LKM_CHANGE_DATE_REG" Type="DateTime" />
+          <Property Name="LKM_TO_FACILITY" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_KEY_TYPE" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="LKM_MSG_ID" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="SNAP_SHOT_DATE" Type="DateTime" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Global_DPK_ReconModelStoreContainer" CdmEntityContainer="Global_DPK_ReconEntities">
+          <EntitySetMapping Name="GLOVIA_EXCEPTION_TRANSACTION">
+            <EntityTypeMapping TypeName="Global_DPK_ReconModel.GLOVIA_EXCEPTION_TRANSACTION">
+              <MappingFragment StoreEntitySet="GLOVIA_EXCEPTION_TRANSACTION">
+                <ScalarProperty Name="GLV_CCN" ColumnName="GLV_CCN" />
+                <ScalarProperty Name="GLV_PN" ColumnName="GLV_PN" />
+                <ScalarProperty Name="GLV_DPK_SN" ColumnName="GLV_DPK_SN" />
+                <ScalarProperty Name="GLV_REF_NO" ColumnName="GLV_REF_NO" />
+                <ScalarProperty Name="LKM_TRANS_TYPE" ColumnName="LKM_TRANS_TYPE" />
+                <ScalarProperty Name="GLV_TRANS_DATE_AUS" ColumnName="GLV_TRANS_DATE_AUS" />
+                <ScalarProperty Name="GLV_TRANS_DATE_REG" ColumnName="GLV_TRANS_DATE_REG" />
+                <ScalarProperty Name="GLV_FROM_ML" ColumnName="GLV_FROM_ML" />
+                <ScalarProperty Name="GLV_FROM_SR" ColumnName="GLV_FROM_SR" />
+                <ScalarProperty Name="GLV_TO_ML" ColumnName="GLV_TO_ML" />
+                <ScalarProperty Name="GLV_TO_SR" ColumnName="GLV_TO_SR" />
+                <ScalarProperty Name="LKM_FROM_STATUS" ColumnName="LKM_FROM_STATUS" />
+                <ScalarProperty Name="LKM_TO_STATUS" ColumnName="LKM_TO_STATUS" />
+                <ScalarProperty Name="LKM_UPDATE_DATE_AUS" ColumnName="LKM_UPDATE_DATE_AUS" />
+                <ScalarProperty Name="LKM_UPDATE_DATE_REG" ColumnName="LKM_UPDATE_DATE_REG" />
+                <ScalarProperty Name="LKM_TO_FACILITY" ColumnName="LKM_TO_FACILITY" />
+                <ScalarProperty Name="LKM_KEY_TYPE" ColumnName="LKM_KEY_TYPE" />
+                <ScalarProperty Name="GLV_MSG_ID" ColumnName="GLV_MSG_ID" />
+                <ScalarProperty Name="SNAP_SHOT_DATE" ColumnName="SNAP_SHOT_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GLOVIA_TO_LKM_TRANSACTION">
+            <EntityTypeMapping TypeName="Global_DPK_ReconModel.GLOVIA_TO_LKM_TRANSACTION">
+              <MappingFragment StoreEntitySet="GLOVIA_TO_LKM_TRANSACTION">
+                <ScalarProperty Name="GLV_CCN" ColumnName="GLV_CCN" />
+                <ScalarProperty Name="GLV_PN" ColumnName="GLV_PN" />
+                <ScalarProperty Name="GLV_DPK_SN" ColumnName="GLV_DPK_SN" />
+                <ScalarProperty Name="GLV_REF_NO" ColumnName="GLV_REF_NO" />
+                <ScalarProperty Name="LKM_TRANS_TYPE" ColumnName="LKM_TRANS_TYPE" />
+                <ScalarProperty Name="GLV_TRANS_DATE_AUS" ColumnName="GLV_TRANS_DATE_AUS" />
+                <ScalarProperty Name="GLV_TRANS_DATE_REG" ColumnName="GLV_TRANS_DATE_REG" />
+                <ScalarProperty Name="GLV_FROM_ML" ColumnName="GLV_FROM_ML" />
+                <ScalarProperty Name="GLV_FROM_SR" ColumnName="GLV_FROM_SR" />
+                <ScalarProperty Name="GLV_TO_ML" ColumnName="GLV_TO_ML" />
+                <ScalarProperty Name="GLV_TO_SR" ColumnName="GLV_TO_SR" />
+                <ScalarProperty Name="LKM_FROM_STATUS" ColumnName="LKM_FROM_STATUS" />
+                <ScalarProperty Name="LKM_TO_STATUS" ColumnName="LKM_TO_STATUS" />
+                <ScalarProperty Name="LKM_UPDATE_DATE_AUS" ColumnName="LKM_UPDATE_DATE_AUS" />
+                <ScalarProperty Name="LKM_UPDATE_DATE_REG" ColumnName="LKM_UPDATE_DATE_REG" />
+                <ScalarProperty Name="LKM_TO_FACILITY" ColumnName="LKM_TO_FACILITY" />
+                <ScalarProperty Name="LKM_KEY_TYPE" ColumnName="LKM_KEY_TYPE" />
+                <ScalarProperty Name="GLV_MSG_ID" ColumnName="GLV_MSG_ID" />
+                <ScalarProperty Name="SNAP_SHOT_DATE" ColumnName="SNAP_SHOT_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LKM_TO_GLOVIA_TRANSACTION">
+            <EntityTypeMapping TypeName="Global_DPK_ReconModel.LKM_TO_GLOVIA_TRANSACTION">
+              <MappingFragment StoreEntitySet="LKM_TO_GLOVIA_TRANSACTION">
+                <ScalarProperty Name="LKM_CCN" ColumnName="LKM_CCN" />
+                <ScalarProperty Name="LKM_PN" ColumnName="LKM_PN" />
+                <ScalarProperty Name="LKM_DPK_SN" ColumnName="LKM_DPK_SN" />
+                <ScalarProperty Name="LKM_FROM_STATUS" ColumnName="LKM_FROM_STATUS" />
+                <ScalarProperty Name="LKM_TO_STATUS" ColumnName="LKM_TO_STATUS" />
+                <ScalarProperty Name="LKM_CHANGE_DATE_AUS" ColumnName="LKM_CHANGE_DATE_AUS" />
+                <ScalarProperty Name="LKM_CHANGE_DATE_REG" ColumnName="LKM_CHANGE_DATE_REG" />
+                <ScalarProperty Name="LKM_TO_FACILITY" ColumnName="LKM_TO_FACILITY" />
+                <ScalarProperty Name="LKM_KEY_TYPE" ColumnName="LKM_KEY_TYPE" />
+                <ScalarProperty Name="LKM_MSG_ID" ColumnName="LKM_MSG_ID" />
+                <ScalarProperty Name="GLV_REF_NO" ColumnName="GLV_REF_NO" />
+                <ScalarProperty Name="LKM_TRANS_TYPE" ColumnName="LKM_TRANS_TYPE" />
+                <ScalarProperty Name="GLV_TRANS_DATE_AUS" ColumnName="GLV_TRANS_DATE_AUS" />
+                <ScalarProperty Name="GLV_TRANS_DATE_REG" ColumnName="GLV_TRANS_DATE_REG" />
+                <ScalarProperty Name="GLV_FROM_ML" ColumnName="GLV_FROM_ML" />
+                <ScalarProperty Name="GLV_FROM_SR" ColumnName="GLV_FROM_SR" />
+                <ScalarProperty Name="GLV_TO_ML" ColumnName="GLV_TO_ML" />
+                <ScalarProperty Name="GLV_TO_SR" ColumnName="GLV_TO_SR" />
+                <ScalarProperty Name="SNAP_SHOT_DATE" ColumnName="SNAP_SHOT_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Report_Uploading_Log">
+            <EntityTypeMapping TypeName="Global_DPK_ReconModel.Report_Uploading_Log">
+              <MappingFragment StoreEntitySet="Report_Uploading_Log">
+                <ScalarProperty Name="ReportName" ColumnName="ReportName" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="TotalRecordNumber" ColumnName="TotalRecordNumber" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User">
+            <EntityTypeMapping TypeName="Global_DPK_ReconModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="MailAddress" ColumnName="MailAddress" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Variance_History">
+            <EntityTypeMapping TypeName="Global_DPK_ReconModel.Variance_History">
+              <MappingFragment StoreEntitySet="Variance_History">
+                <ScalarProperty Name="SOURCE" ColumnName="SOURCE" />
+                <ScalarProperty Name="LKM_CCN" ColumnName="LKM_CCN" />
+                <ScalarProperty Name="LKM_PN" ColumnName="LKM_PN" />
+                <ScalarProperty Name="LKM_DPK_SN" ColumnName="LKM_DPK_SN" />
+                <ScalarProperty Name="LKM_FROM_STATUS" ColumnName="LKM_FROM_STATUS" />
+                <ScalarProperty Name="LKM_TO_STATUS" ColumnName="LKM_TO_STATUS" />
+                <ScalarProperty Name="LKM_MSG_ID" ColumnName="LKM_MSG_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="View_Variance_Items">
+            <EntityTypeMapping TypeName="Global_DPK_ReconModel.View_Variance_Items">
+              <MappingFragment StoreEntitySet="View_Variance_Items">
+                <ScalarProperty Name="SOURCE" ColumnName="SOURCE" />
+                <ScalarProperty Name="LKM_CCN" ColumnName="LKM_CCN" />
+                <ScalarProperty Name="LKM_PN" ColumnName="LKM_PN" />
+                <ScalarProperty Name="LKM_DPK_SN" ColumnName="LKM_DPK_SN" />
+                <ScalarProperty Name="GLV_REF_NO" ColumnName="GLV_REF_NO" />
+                <ScalarProperty Name="LKM_TRANS_TYPE" ColumnName="LKM_TRANS_TYPE" />
+                <ScalarProperty Name="GLV_TRANS_DATE_AUS" ColumnName="GLV_TRANS_DATE_AUS" />
+                <ScalarProperty Name="GLV_TRANS_DATE_REG" ColumnName="GLV_TRANS_DATE_REG" />
+                <ScalarProperty Name="GLV_FROM_ML" ColumnName="GLV_FROM_ML" />
+                <ScalarProperty Name="GLV_FROM_SR" ColumnName="GLV_FROM_SR" />
+                <ScalarProperty Name="GLV_TO_ML" ColumnName="GLV_TO_ML" />
+                <ScalarProperty Name="GLV_TO_SR" ColumnName="GLV_TO_SR" />
+                <ScalarProperty Name="LKM_FROM_STATUS" ColumnName="LKM_FROM_STATUS" />
+                <ScalarProperty Name="LKM_TO_STATUS" ColumnName="LKM_TO_STATUS" />
+                <ScalarProperty Name="LKM_CHANGE_DATE_AUS" ColumnName="LKM_CHANGE_DATE_AUS" />
+                <ScalarProperty Name="LKM_CHANGE_DATE_REG" ColumnName="LKM_CHANGE_DATE_REG" />
+                <ScalarProperty Name="LKM_TO_FACILITY" ColumnName="LKM_TO_FACILITY" />
+                <ScalarProperty Name="LKM_KEY_TYPE" ColumnName="LKM_KEY_TYPE" />
+                <ScalarProperty Name="LKM_MSG_ID" ColumnName="LKM_MSG_ID" />
+                <ScalarProperty Name="SNAP_SHOT_DATE" ColumnName="SNAP_SHOT_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="GlobalDPKDatabasae">
+        <EntityTypeShape EntityType="Global_DPK_ReconModel.GLOVIA_EXCEPTION_TRANSACTION" Width="1.5" PointX="0.75" PointY="0.75" Height="4.6725065104166656" IsExpanded="true" />
+        <EntityTypeShape EntityType="Global_DPK_ReconModel.GLOVIA_TO_LKM_TRANSACTION" Width="1.5" PointX="2.75" PointY="0.75" Height="4.6725065104166656" IsExpanded="true" />
+        <EntityTypeShape EntityType="Global_DPK_ReconModel.LKM_TO_GLOVIA_TRANSACTION" Width="1.5" PointX="4.75" PointY="0.75" Height="4.6725065104166656" IsExpanded="true" />
+        <EntityTypeShape EntityType="Global_DPK_ReconModel.Report_Uploading_Log" Width="1.5" PointX="6.75" PointY="0.75" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Global_DPK_ReconModel.User" Width="1.5" PointX="0.75" PointY="6.75" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Global_DPK_ReconModel.Variance_History" Width="1.5" PointX="2.75" PointY="6.75" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Global_DPK_ReconModel.View_Variance_Items" Width="1.5" PointX="6.75" PointY="3.75" Height="4.8648079427083317" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
